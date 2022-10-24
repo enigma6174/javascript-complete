@@ -22,7 +22,7 @@ title: JavaScript 101
 email: enigma6174@github.com
 description: >- # this means to ignore newlines until "baseurl:"
   A quick reference guide to everything JavaScript. This is the most detailed JavaScript blog you will find in one place!
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
