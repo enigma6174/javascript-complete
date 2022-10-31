@@ -34,11 +34,8 @@ The spread syntax should be used when all elements from an object or array need 
 The distinct places that accept the spread syntax:
 
 - Function arguments list `foo(arg1, arg2, ...args, argN)`
-
 - Array literals `[10, 20, ...numbers, 0.1, 0.2]`
-
 - Object literals `{...obj, key: "value"}`
-
 
 Only iterables like arrays can be spread in array and function parameters. Object literals are not iterable therefore using the spread syntax on object literals enumerates it's own properties.
 
@@ -46,11 +43,11 @@ Only iterables like arrays can be spread in array and function parameters. Objec
 const obj = { key: "value" };
 const arr = [1, 2, 3];
 
-const res1 = [...obj]; 
+const res1 = [...obj];
 // This will give error
 // Objects are not iterable
 
-const res2 = [...arr]; 
+const res2 = [...arr];
 // This will work
 // Arrays are iterable
 ```
@@ -101,7 +98,7 @@ const num2 = [];
 
 // Iterate over num1 and insert every element into num2
 for (let i = 0; i < num1.length; i++) {
-    num2.push(num1[i]);
+  num2.push(num1[i]);
 }
 
 console.log(num1);
@@ -129,7 +126,7 @@ A **shallow copy** on the other hand creates a copy of an array but the copied a
 const num1 = [10, 20, 30];
 
 // Create a shallow copy of num1
-const num2 = num1
+const num2 = num1;
 
 // Changes to one array will not reflect in the other
 num1.push(0);
@@ -145,11 +142,11 @@ console.log(...num2);
 
 **Note**
 
-The spread syntax only goes **one level deep** when it is making copies of an array which means that nested arrays when getting copied using spread syntax are shallow copies.  
+The spread syntax only goes **one level deep** when it is making copies of an array which means that nested arrays when getting copied using spread syntax are shallow copies.
 
-Therefore, it may be unsuitable for copying multidimensional arrays. No native operation in JavaScript does a deep clone.
+Therefore it may be unsuitable for copying multi-dimensional arrays. No native operation in JavaScript does a deep clone.
 
-That is, when we copy the nested arrays both the copied and the new array refer to the same memory location for the nested sub arrays.
+> When we copy the nested arrays both the copied and the new array refer to the same memory location for the nested sub arrays.
 
 Consider the example
 
@@ -192,19 +189,19 @@ console.log(matrix);
 console.log(newMatrix);
 
 // Output (matrix)
-// [ 
-//     [1, 2, 3, 0], 
-//     [0.1, 0.2, 0.3, -99], 
-//     [10, 20, 30], 
-//     [-1, -2, -3] 
+// [
+//     [1, 2, 3, 0],
+//     [0.1, 0.2, 0.3, -99],
+//     [10, 20, 30],
+//     [-1, -2, -3]
 // ]
 
 // Output (newMatrix)
-// [ 
-//     [1, 2, 3, 0], 
-//     [0.1, 0.2, 0.3, -99], 
-//     [10, 20, 30], 
-//     [-10, -20, -30] 
+// [
+//     [1, 2, 3, 0],
+//     [0.1, 0.2, 0.3, -99],
+//     [10, 20, 30],
+//     [-10, -20, -30]
 // ]
 ```
 
@@ -225,13 +222,13 @@ console.log(...numbers);
 
 // Output
 // 0, 2, 4, 6, 8, 10, 4, 16, 36, 64, 100, 1, 3, 5, 7, 9, 0.1
-```  
+```
 
 The spread syntax can be used as many times as required to create a new array. There is no restriction on the number of times it can be used. However the order in which the spread syntax is used determines the order in which the unpacked elements appear in the new array.
 
 ```javascript
 const cities = ["london", "delhi", "tokyo"];
-const countries = ["england", "india", "japan"]
+const countries = ["england", "india", "japan"];
 
 const data1 = [...countries, ...cities];
 // Output
@@ -276,10 +273,10 @@ const result1 = addNumbers(values[0], values[1], values[2]); // 60
 const result2 = addNumbers(...values); // 60
 
 function getInfo(name, subject1, subject2, subject3, grade, email) {
-    console.log(`student ${name} has ${grade} grade`);
-    console.log("subjects registered:");
-    console.log(`${subject1}\n${subject2}\n${subject3}`);
-    console.log(`student ${name} can be reached at ${email}`);
+  console.log(`student ${name} has ${grade} grade`);
+  console.log("subjects registered:");
+  console.log(`${subject1}\n${subject2}\n${subject3}`);
+  console.log(`student ${name} can be reached at ${email}`);
 }
 
 const subjects = ["physics", "chemistry", "mathematics"];
@@ -299,21 +296,15 @@ getInfo("Harry", ...subjects, "B+", "hsmith@email.com");
 - Traditionally, the spread syntax could only be used on **iterables** but not on objects as objects are not iterable. However, as of ES 2018 it is possible to use the spread syntax on objects also though it behaves a bit differently.
 
 - An iterable is a data structure in JavaScript that we can iterate over or in simpler terms, loop over.
-
 - Strings, arrays, maps etc. are some of the most common iterables in JS and all of these can be used with spread syntax.
-
 - Since a **string** is also an iterable we can use it with the spread syntax as `console.log(..."hello")`
-
 
 - An important distinction between spread syntax and de-structuring is that de-structuring creates new variables whereas spread syntax does not.
 
-
 - Spread syntax is useful in places only where we need values separated by commas.
-
 - Creating a new array from existing array or passing an array of arguments to a function are the best use cases.
-
 - Passing spread syntax for example to a variable `const t = ..."hello"` or to a template string inside the `${..."hello"}` will result in errors.
 
 ## Important Links
-You can refer to the below links for more information on the spread
-#### [MDN - Spread Syntax ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+- [MDN - Spread Syntax ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)

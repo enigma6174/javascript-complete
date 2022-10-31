@@ -67,7 +67,7 @@ console.log(sat);
 
 console.log(weekdays);
 // {
-//     thu: {open: '7am', close: '10pm'} 
+//     thu: {open: '7am', close: '10pm'}
 //     fri: {open: '7am', close: '11pm'}
 // }
 ```
@@ -83,14 +83,14 @@ function add(...numbers) {
     sum += numbers[i];
   }
   return sum;
-};
+}
 
 console.log(add(3)); // 3
 console.log(add(1, 2, 3, 4, 5)); // 15
 console.log(add(10, 20, 30)); // 60
 ```
 
-A function definition's last parameter can be prefixed with a **...** which will cause all remaining parameters to be placed or *collected* into a single JavaScript array.
+A function definition's last parameter can be prefixed with a **...** which will cause all remaining parameters to be placed or _collected_ into a single JavaScript array.
 
 **Only the last parameter in a function can be a rest parameter**
 
@@ -101,9 +101,9 @@ function getInfo(name, email, ...scores) {
     total += scores[i];
   }
   const avg = total / scores.length;
-    
+
   console.log(`student ${name} can be reached at ${email}`);
-  console.log(`average score for ${scores.length} subjects is ${avg}`)
+  console.log(`average score for ${scores.length} subjects is ${avg}`);
 }
 
 // All the integer values passed as arguments get stored inside array
@@ -124,7 +124,7 @@ function add(...numbers) {
     sum += numbers[i];
   }
   return sum;
-};
+}
 
 const evenNumbers = [10, 20, 30, 40];
 const oddNumbers = [1, 3, 5, 7];
@@ -140,15 +140,11 @@ const sumOfNumbers = add(...[...evenNumbers, ...oddNumbers]); // 116
 ## Closing Notes
 
 - The syntax **...** remains the same for rest and spread but their behaviour gets defined by where they are used and how they are used.
-
 - As a rule of the thumb if they are used inside **function definition** or on the left hand side of the assignment operator then it is the rest syntax we are looking at.
-
 - If they are used inside a **function call** or on the right hand side of assignment operator then it is spread syntax we are looking at.
-
 - The spread syntax can be present any number of times in a **function call** but the rest parameters can only be present once and that also as the last parameter in a **function definition**
-
 - The spread syntax unpacks the elements of an array into individual values which may or may not be assigned to variables but the rest syntax always collects the values into a single array.
 
 ## Important Links
-You can refer to the below links for more information on the spread
-#### [MDN - Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+- [MDN - Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
