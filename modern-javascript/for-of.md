@@ -2,7 +2,7 @@
 layout: default
 title: for...of statement
 parent: Modern Javascript
-nav_order: 4
+nav_order: 5
 ---
 
 # Looping With for...of Statement
