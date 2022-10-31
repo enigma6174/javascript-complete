@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Rest Pattern And Parameters
+title: Rest Pattern
 parent: Modern Javascript
-nav_order: 3
+nav_order: 2
 ---
+
+# Working With Rest Pattern And Parameters
 
 The rest pattern is also similar to spread syntax and is denoted by **...** but it is used to collect multiple elements and condense them into an array. Functionality wise it is the opposite of spread operator.
 

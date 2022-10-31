@@ -2,9 +2,10 @@
 layout: default
 title: Spread Syntax
 parent: Modern Javascript
-nav_order: 2
+nav_order: 1
 ---
 
+# A Deep Dive Into The Spread Syntax
 
 The spread syntax **...** is used to unpack all the items in an array (or an iterable). This feature was introduced in ES6 and is a very handy way of working on iterables.
 
@@ -144,7 +145,9 @@ console.log(...num2);
 
 **Note**
 
-The spread syntax only goes **one level deep** when it is making copies of an array which means that nested arrays when getting copied using spread syntax are shallow copies.
+The spread syntax only goes **one level deep** when it is making copies of an array which means that nested arrays when getting copied using spread syntax are shallow copies.  
+
+Therefore, it may be unsuitable for copying multidimensional arrays. No native operation in JavaScript does a deep clone.
 
 That is, when we copy the nested arrays both the copied and the new array refer to the same memory location for the nested sub arrays.
 
@@ -204,8 +207,6 @@ console.log(newMatrix);
 //     [-10, -20, -30] 
 // ]
 ```
-
-> The spread syntax goes only one level deep when copying an array. Therefore it may be unsuitable for copying multi-dimensional arrays. No native operation in JavaScript does a deep clone.
 
 ## Concatenating Arrays
 

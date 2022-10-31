@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c76f3899-b719-4256-bcdc-43b5c141b654" name="Changes" comment="Modified the examples in modern javascript syntax section and refactored the directory">
-      <change afterPath="$PROJECT_DIR$/.idea/javascript-complete.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modern-javascript/modern-javascript.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modern-javascript/rest-pattern.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modern-javascript/spread-syntax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-10-24-welcome-to-jekyll.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/about.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modern-javascript/modern-javascript.md" beforeDir="false" afterPath="$PROJECT_DIR$/modern-javascript/modern-javascript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modern-javascript/rest-pattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/modern-javascript/rest-pattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modern-javascript/spread-syntax.md" beforeDir="false" afterPath="$PROJECT_DIR$/modern-javascript/spread-syntax.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666976478288</updated>
       <workItem from="1666976480133" duration="1336000" />
-      <workItem from="1667016022776" duration="23761000" />
+      <workItem from="1667016022776" duration="26986000" />
     </task>
     <task id="LOCAL-00001" summary="Modified the examples in modern javascript syntax section and refactored the directory">
       <created>1667148655825</created>
