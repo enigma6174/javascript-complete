@@ -29,11 +29,11 @@ When there are multiple expressions chained together then the first truthy expre
 
 ```javascript
 const expression = function () {
-    return "evaluated!";
+  return "evaluated!";
 };
 
 console.log(5 || expression()); // 5
-console.log(0 || expression()); // evaluated! 
+console.log(0 || expression()); // evaluated!
 console.log(0 || false || "hello" || expression()); // hello
 console.log([] || false || "hello" || expression()); // []
 console.log(expression() || "hello" || true); // evaluated!
@@ -46,7 +46,7 @@ When there are multiple expressions chained together then the first falsy expres
 
 ```javascript
 const expression = function () {
-    return "evaluated!";
+  return "evaluated!";
 };
 
 console.log(0 && expression()); // 0
@@ -60,15 +60,11 @@ console.log("hello" && true && null && 0 && "hello"); // null
 ## Closing Notes
 
 - The logical OR operator will return the first truthy value of all the operands or simply the last value if all of them are falsy.
-  
 - The logical AND operator will return the first falsy value of all the operands or the last value if all of them are truthy.
-  
 - The OR operator is generally used to set default values of variables whereas the AND operator is generally used to conditionally execute code (the condition being the first operand)
-  
 - Empty strings, null and undefined values are all falsy values but empty arrays or empty object literals are truthy values.
-  
 
 ## Further Reference
-- [MDN - Logical OR]([Logical OR (||) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR))
 
-- [MDN - Logical AND]([Logical AND (&amp;&amp;) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND))
+- [MDN - Logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+- [MDN - Logical AND](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
