@@ -1,9 +1,9 @@
 ---
 layout: default
-title: A Deep Dive Into JavaScript Functions
-nav_order: 2
+title: Functions
+nav_order: 4
 has_children: true
-permalink: /data-structures/
+permalink: /functions/
 ---
 
-# JavaScript Data Structures
+# A Deep Dive Into Functions In JavaScript
