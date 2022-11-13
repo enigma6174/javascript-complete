@@ -1,3 +1,5 @@
+"use strict";
+
 // Short circuiting with logical OR
 console.log(5 || "hello world"); // 5
 console.log(true || "hello world"); // true
